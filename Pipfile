@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[pipenv]
+allow_prereleases = true
+
+[packages]
+qiskit = { extras = ["machine-learning"], version = "*" }
+
+[dev-packages]
+pylint = "*"
+black = "*"
+
+[requires]
+python_version = "3.9"
